@@ -2220,6 +2220,12 @@ input[type="submit"]:hover,
   background-color: var(--green);
 }
 
+.topbar--fixed-scroll .btn--topbar:hover,
+.topbar--fixed-scroll .login:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
 @media (max-width: 767px) {
 
 .topbar .submit-a-request,
@@ -3359,16 +3365,20 @@ input[type="submit"]:hover,
   text-align: center;
   background-color: rgba(15, 57, 22, .4);
   border-radius: 4px;
+  background-image: url('./img/IronMoun.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
 }
 
 .footer-submit-ticket__title {
-  color: var(--darkGreen);
+  color: #fff;
   font-size: calc(16px * 1.5);
 }
 
 .footer-submit-ticket__subtitle {
   font-size: calc(16px * 1.5);
-  color: #1b532d;
+  color: #fff;
 }
 
 .footer-submit-ticket__btn:empty {
@@ -3377,6 +3387,15 @@ input[type="submit"]:hover,
 
 .footer-submit-ticket__btn .btn {
     padding: 10px 18px;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    transition: background ease .3s;
+  }
+
+.footer-submit-ticket__btn .btn:hover,
+.footer-submit-ticket__btn .btn:active {
+    background-color: var(--darkGreen);
+    border-color: var(--darkGreen);
   }
 
 .footer {
